@@ -1,0 +1,37 @@
+<p><strong>Endpoints disponibles:</strong></p>
+<table style="width: 100%;">
+    <tbody>
+        <tr>
+            <td style="width: 11.8706%;">/prevision<br></td>
+            <td style="width: 88.1294%;">Arroja 6 im&aacute;genes consecutivas, pertenecientes a las 6 im&aacute;genes posteriores a la serie hist&oacute;rica de 3 im&aacute;genes mas similar.</td>
+        </tr>
+        <tr>
+            <td style="width: 11.8706%;">/serie_actual<br></td>
+            <td style="width: 88.1294%;">Arroja la serie de 3 &uacute;ltimas im&aacute;genes capturadas por el radar.</td>
+        </tr>
+        <tr>
+            <td style="width: 11.8706%;">/serie_antigua<br></td>
+            <td style="width: 88.1294%;">Arroja la serie de 3 im&aacute;genes capturadas por el radar con mas semejanza a la serie actual.<br></td>
+        </tr>
+        <tr>
+            <td style="width: 11.8706%;">/historico_disponible<br></td>
+            <td style="width: 88.1294%;">Arroja la lista de im&aacute;genes almacenadas.</td>
+        </tr>
+        <tr>
+            <td style="width: 11.8706%;">/historico<br></td>
+            <td style="width: 88.1294%;">Si se le pasa por par&aacute;metro una imagen de la lista de im&aacute;genes almacenadas, esta se muestra en pantalla (ejemplo: /historico?date=<span style='color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>Valencia_2023-07-15-14-32.png</span>).</td>
+        </tr>
+        <tr>
+            <td style="width: 11.8706%;">/ayuda<br></td>
+            <td style="width: 88.1294%;">Breve descripci&oacute;n de endpoints y funcionamiento de la p&aacute;gina.</td>
+        </tr>
+    </tbody>
+</table>
+<p>Modelo simple de previsi&oacute;n por comparaci&oacute;n de la similitud de la serie actual y las hist&oacute;ricas, basada en que, una situaci&oacute;n actual con alto grado de similitud con una situaci&oacute;n pasada tambi&eacute;n ha de llevar cierto grado de similitud futura en el tiempo, siendo esta, obviamente mas incierta cuando mas alejada sea.</p>
+<p>Actualmente la web arroja solo im&aacute;genes de la zona de Valencia, comparando entre series temporales de 30 minutos (3 imagenes) y con una proyecci&oacute;n de previsi&oacute;n a 1 hora (6 im&aacute;genes).</p>
+<p>Pero el backend de la web, est&aacute; preparado para trabajar con cualquier zona de Espa&ntilde;a as&iacute; como para cualquier longitud de las series, tanto de comparaci&oacute;n como de previsi&oacute;n.</p>
+<p>Para ello hay que editar las variables de el modulo core.py, el c&oacute;digo fuente se aloja en <a data-fr-linked="true" href="https://github.com/ocsisco/db_forecast">https://github.com/ocsisco/db_forecast</a> as&iacute; como cualquier informaci&oacute;n de contacto.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
